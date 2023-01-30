@@ -8,4 +8,4 @@ var sss = 1200;
 var pagbig = 300;
 var phealth = 400;
 
-console.log('The Gross Income is: '(calc.multiply(rate, hours));
+console.log('The Gross Income is: ' (calcul.multiply(rate, hours));
