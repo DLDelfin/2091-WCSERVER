@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Express App | Home</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a href="upload.html">Upload</a>
+    </div>
+
+    <h1>Welcome to WCSERVER</h1>
+    <h2>This is the Contact page</h2>
+    <br />
+    <h1>Contact Us</h1>
+    <nav class="fix">
+      <form action="http://127.0.0.1:3000/process_post" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="Name" placeholder="Your name.." />
+        <br />
+        <label for="subj">Subject: </label>
+        <input
+          type="text"
+          id="subj"
+          name="Subject"
+          placeholder="Your subject.."
+        />
+        <br />
+        <label for="message">Message: </label>
+        <textarea
+          id="message"
+          name="Message"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+        <br />
+        <label for="email">Email: </label>
+        <input
+          type="text"
+          id="email"
+          name="Email"
+          placeholder="Provide valid email address.."
+        />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </nav>
+  </body>
+</html>

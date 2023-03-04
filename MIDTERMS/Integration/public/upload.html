@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Express App | Home</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a class="active" href="upload.html">Upload</a>
+    </div>
+
+    <h1>Welcome to WCSERVER</h1>
+    <h2>This is the Upload page</h2>
+    <br />
+    <h1>Upload your Videos Here!</h1>
+    <form action="/uploads" enctype="multipart/form-data" method="POST">
+      <input type="file" name="myFile" /> <br />
+      <button type="submit">Submit</button>
+    </form>
+    <p>Note: Only images will be uploaded.</p>
+  </body>
+</html>
