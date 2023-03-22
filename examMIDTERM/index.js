@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 
 const dishes = [
-  { type: 'sisig', province: 'pampanga', price: 220 },
-  { type: 'salpicao', province: 'quezon', price: 180 },
-  { type: 'bagnet', province: 'ilocos', price: 370 },
+  { type: 'Sisig', province: 'Pampanga', price: 220 },
+  { type: 'Salpicao', province: 'Quezon', price: 180 },
+  { type: 'Bagnet', province: 'Ilocos', price: 370 },
 ];
 
 app.get('/dishes', (req, res) => {
