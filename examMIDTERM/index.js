@@ -14,14 +14,14 @@ app.get('/dishes', (req, res) => {
 app.get('/dishes/:type', (req, res) => {
   const dish = dishes.find((d) => d.type === req.params.type);
   if (!dish) {
-    res.status(404).json({ error: 'Record not found' });
+    res.status(404).json({ error: 'Record Not Found' });
   } else {
     res.json(dish);
   }
 });
 
 app.use((req, res) => {
-  res.status(404).json({ error: 'Record not found' });
+  res.status(404).json({ error: 'Record Not Found' });
 });
 
 app.listen(3000, () => {
